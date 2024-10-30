@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Welcome to the Question App</h1>
+    <button onclick="window.location.href = '{{ url_for('upload') }}'">Upload Questions</button>
+    <button onclick="window.location.href = '{{ url_for('generate') }}'">Generate Questions</button>
+</body>
+</html>

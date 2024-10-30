@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generate Questions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Answer the following questions</h2>
+    <form action="{{ url_for('generate') }}" method="POST">
+        <label>1. Who is facing the problem?</label>
+        <input type="text" name="who" required>
+
+        <label>2. What is the problem identified?</label>
+        <input type="text" name="what_problem" required>
+
+        <label>3. What is this problem?</label>
+        <input type="text" name="problem_description" required>
+
+        <label>4. The amount of time available to talk to those people who face the problem.</label>
+        <input type="text" name="time_available" required>
+
+        <button type="submit">Guide me to talk to these people</button>
+    </form>
+</body>
+</html>
